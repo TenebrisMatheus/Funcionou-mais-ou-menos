@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+     <a href="games.html">games</a> <a href="cinema.html">cinema</a><a href="musica.html">musica</a>
+    <!-- Formulário de upload -->
+    <form id="upload-form">
+        <label for="media">Escolha a Mídia:</label>
+        <input type="file" id="media" accept="image/*, audio/*, video/*" required>
+
+        <label for="category">Escolha a Categoria:</label>
+        <select id="category" required>
+            <option value="musica">Música</option>
+            <option value="games">Games</option>
+            <option value="cinema">Cinema</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Container para exibir mídias da categoria selecionada -->
+    <div id="media-container"></div>
+
+    <!-- Incluir o script Firebase e seu script principal -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

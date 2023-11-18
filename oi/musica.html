@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria Música</title>
+</head>
+<body>
+    <h1>Mídias - Categoria Música</h1>
+    <a href="home.html">Home</a>
+    <div id="musica-media-container"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js"></script>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Chamar a função showMedia com a categoria 'musica'
+        document.addEventListener('DOMContentLoaded', function () {
+            showMedia('musica');
+        });
+    </script>
+</body>
+</html>
